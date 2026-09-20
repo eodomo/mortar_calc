@@ -9,7 +9,7 @@ func TestGetDistance(t *testing.T) {
 	p2 := Point{74, 0}
 
 	ans := GetDistance(p1, p2)
-	if ans != 10 {
+	if ans != 1000.0 {
 		t.Errorf("GetDistance([64, 0], [75,0]) = %f; want 10", ans)
 	}
 }

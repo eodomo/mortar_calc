@@ -10,7 +10,7 @@ type Point struct {
 func GetDistance(p1 Point, p2 Point) float64 {
 	x2 := math.Pow(p2.x-p1.x, 2)
 	y2 := math.Pow(p2.y-p1.y, 2)
-	return math.Pow(x2+y2, (0.5))
+	return math.Pow(x2+y2, (0.5)) * 100.0
 }
 
 func GetAngle(p1 Point, p2 Point) float64 {
