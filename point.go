@@ -15,5 +15,5 @@ func GetDistance(p1 Point, p2 Point) float64 {
 
 func GetAngle(p1 Point, p2 Point) float64 {
 	angle := math.Atan((p2.y-p1.y)/(p2.x-p1.x)) * (180 / math.Pi)
-	return angle
+	return math.Mod(math.Mod(angle, 360.0)+360.0, 360.0)
 }
