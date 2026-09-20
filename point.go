@@ -19,7 +19,7 @@ func GetAngle(p1, p2 Point) float64 {
 
 	// Atan2(dx, -dy) converts Cartesian/screen coordinates
 	// into a clockwise compass bearing from north.
-	angle := math.Atan2(dx, -dy) * 180 / math.Pi
+	angle := math.Atan2(dx, dy) * 180 / math.Pi
 
 	// Normalize [-180, 180] to [0, 360).
 	return math.Mod(angle+360, 360)
